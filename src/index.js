@@ -15,3 +15,13 @@ function component(){
 }
 
 document.body.appendChild(component());
+
+if (module.hot) {
+    module.hot.accept('./afficher.js', function() {
+      // Do something with the updated afficher module...
+      console.log("C'est hot!");
+      document.removeChild(el);
+      el = component();
+      document.body.appendChild(component());
+    });
+  }
