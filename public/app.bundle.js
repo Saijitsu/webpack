@@ -63,7 +63,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "45e89ba9d9e39a7e38b6";
+/******/ 	var hotCurrentHash = "19807ecab1d2ee93ee48";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -800,7 +800,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".element{\\r\\n    background: rgb(214, 209, 209);\\r\\n    color: yellow;\\r\\n    text-align: center\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".element{\\r\\n    background: rgb(214, 209, 209);\\r\\n    color: yellow;\\r\\n    text-align: center\\r\\n}\\r\\n\\r\\n.element p{\\r\\n    background: rgb(238, 233, 233);\\r\\n    color: burlywood;\\r\\n    text-align: center;\\r\\n    font: bolder 2em\\r\\n}\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -891,7 +891,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _afficher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./afficher */ \"./src/afficher.js\");\n// var _ = require('lodash');\r\n\r\n\r\n\r\n\r\nfunction component(){\r\n    var el = document.createElement('div');\r\n   el.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack!'], ' ');\r\n   var button= document.createElement('button');\r\n   button.innerHTML = (\"Click on me, look at the console.log!\");\r\n   button.onclick = _afficher__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\r\n   el.classList.add('element');\r\n   el.appendChild(button);\r\n    return el; \r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\r\nif (true) {\r\n    module.hot.accept(/*! ./afficher.js */ \"./src/afficher.js\", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ _afficher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./afficher.js */ \"./src/afficher.js\");\n(function() {\r\n      // Do something with the updated afficher module...\r\n      console.log(\"C'est hot!\");\r\n      document.removeChild(el);\r\n      el = component();\r\n      document.body.appendChild(component());\r\n    })(__WEBPACK_OUTDATED_DEPENDENCIES__); }.bind(this));\r\n  }\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\");\n/* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./styles.css */ \"./src/styles.css\");\n/* harmony import */ var _styles_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_styles_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _afficher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./afficher */ \"./src/afficher.js\");\n/* harmony import */ var _user_ts__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user.ts */ \"./src/user.ts\");\n/* harmony import */ var _user_ts__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_user_ts__WEBPACK_IMPORTED_MODULE_3__);\n// var _ = require('lodash');\r\n\r\n\r\n\r\n\r\n\r\nfunction component() {\r\n    var el = document.createElement('div');\r\n    el.innerHTML = lodash__WEBPACK_IMPORTED_MODULE_0___default.a.join(['Hello', 'webpack!'], ' ');\r\n    var button = document.createElement('button');\r\n    var ADOLPH = new _user_ts__WEBPACK_IMPORTED_MODULE_3__[\"User\"]('Adolph', 'adolph@mail.com', 601020102);\r\n    var text = document.createElement('p');\r\n    button.innerHTML = (\"Click on me, look at the console.log!\");\r\n    el.appendChild(text);\r\n    text.innerHTML = ADOLPH.textMe();\r\n    button.innerHTML = (\"Click on me, look at the console.log!\");\r\n    button.onclick = _afficher__WEBPACK_IMPORTED_MODULE_2__[\"default\"];\r\n    el.classList.add('element');\r\n    el.appendChild(button);\r\n    return el;\r\n}\r\n\r\ndocument.body.appendChild(component());\r\n\r\nif (true) {\r\n    module.hot.accept(/*! ./afficher.js */ \"./src/afficher.js\", function(__WEBPACK_OUTDATED_DEPENDENCIES__) { /* harmony import */ _afficher__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./afficher.js */ \"./src/afficher.js\");\n(function () {\r\n        // Do something with the updated afficher module...\r\n        console.log(\"C'est hot!\");\r\n        document.removeChild(el);\r\n        el = component();\r\n        document.body.appendChild(component());\r\n    })(__WEBPACK_OUTDATED_DEPENDENCIES__); }.bind(this));\r\n}\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ }),
 
@@ -903,6 +903,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var loda
 /***/ (function(module, exports, __webpack_require__) {
 
 eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./styles.css */ \"./node_modules/css-loader/dist/cjs.js!./src/styles.css\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(true) {\n\tmodule.hot.accept(/*! !../node_modules/css-loader/dist/cjs.js!./styles.css */ \"./node_modules/css-loader/dist/cjs.js!./src/styles.css\", function() {\n\t\tvar newContent = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!./styles.css */ \"./node_modules/css-loader/dist/cjs.js!./src/styles.css\");\n\n\t\tif(typeof newContent === 'string') newContent = [[module.i, newContent, '']];\n\n\t\tvar locals = (function(a, b) {\n\t\t\tvar key, idx = 0;\n\n\t\t\tfor(key in a) {\n\t\t\t\tif(!b || a[key] !== b[key]) return false;\n\t\t\t\tidx++;\n\t\t\t}\n\n\t\t\tfor(key in b) idx--;\n\n\t\t\treturn idx === 0;\n\t\t}(content.locals, newContent.locals));\n\n\t\tif(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');\n\n\t\tupdate(newContent);\n\t});\n\n\tmodule.hot.dispose(function() { update(); });\n}\n\n//# sourceURL=webpack:///./src/styles.css?");
+
+/***/ }),
+
+/***/ "./src/user.ts":
+/*!*********************!*\
+  !*** ./src/user.ts ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\r\nObject.defineProperty(exports, \"__esModule\", { value: true });\r\nvar User = /** @class */ (function () {\r\n    function User(name, mail, phone) {\r\n        this.name = name;\r\n        this.mail = mail;\r\n        this.phone = phone;\r\n    }\r\n    User.prototype.describe = function () {\r\n        console.log('This is my name: ', this.name, ' And this is my phone number: ', this.phone, ' And this is my mail: ', this.mail);\r\n    };\r\n    User.prototype.setName = function (name) {\r\n        this.name = name;\r\n    };\r\n    User.prototype.getName = function () {\r\n        return this.name;\r\n    };\r\n    User.prototype.getPhone = function () {\r\n        return this.phone;\r\n    };\r\n    User.prototype.setPhone = function (phone) {\r\n        this.phone = phone;\r\n    };\r\n    User.prototype.textMe = function () {\r\n        return 'This is my name: ' + this.name + ' And this is my phone number: 0' + this.phone + ' And this is my mail: ' + this.mail;\r\n    };\r\n    return User;\r\n}());\r\nexports.User = User;\r\n\n\n//# sourceURL=webpack:///./src/user.ts?");
 
 /***/ })
 

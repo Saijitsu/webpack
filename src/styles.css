@@ -3,3 +3,10 @@
     color: yellow;
     text-align: center
 }
+
+.element p{
+    background: rgb(238, 233, 233);
+    color: burlywood;
+    text-align: center;
+    font: bolder 2em
+}
