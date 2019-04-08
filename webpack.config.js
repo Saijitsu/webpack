@@ -1,6 +1,6 @@
 var path = require('path');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+var CleanWebpackPlugin = require('clean-webpack-plugin')
 module.exports = {
   mode: 'development',
   entry: {
@@ -19,7 +19,9 @@ afficher: './src/afficher.js'
         ]}
       ]
   },
-  plugins: [new HtmlWebpackPlugin(
+  plugins: [
+    new CleanWebpackPlugin(),
+    new HtmlWebpackPlugin(
       {title: 'Hello title de page'}
   )]
 };
