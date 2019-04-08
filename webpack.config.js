@@ -1,4 +1,5 @@
 var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -17,5 +18,8 @@ afficher: './src/afficher.js'
             'style-loader', 'css-loader'
         ]}
       ]
-  }
+  },
+  plugins: [new HtmlWebpackPlugin(
+      {title: 'Hello title de page'}
+  )]
 };
